@@ -7,18 +7,18 @@ import os
 pygame.init()
 
 screen = pygame.display.set_mode((800, 600))
-pygame.display.set_caption('fujitaInvaders Game')
+pygame.display.set_caption('Custom Invaders Game')
 
 # Asset path
 asset_dir = 'assets'
 
 # Player
-playerImg = pygame.image.load(os.path.join(asset_dir, 'fujitaPlayerMini.png'))
+playerImg = pygame.image.load(os.path.join(asset_dir, 'custom_player.png'))
 playerX, playerY = 370, 480
 playerX_change = 0
 
 # Enemy
-enemyImg = pygame.image.load(os.path.join(asset_dir, 'kokobonEnemyMini.png'))
+enemyImg = pygame.image.load(os.path.join(asset_dir, 'custom_enemy.png'))
 enemyX = random.randint(0, 736)
 enemyY = random.randint(50, 150)
 enemyX_change, enemyY_change = 1, 20
